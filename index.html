@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/commom.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <title>Brunch</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="header">
+            <div class="logo">
+                <a href="#">
+                    <img src="img/Brunch_logo_header.png" alt="브런치">
+                </a>
+            </div>
+            <div class="gnb_list">
+                <ul>
+                    <li>
+                        <a href="#">새소식</a>
+                    </li>
+                    <li>
+                        <a href="#">메뉴</a>
+                    </li>
+                    <li>
+                        <a href="#">Brand</a>
+                    </li>
+                    <li>
+                        <a href="#">매장</a>
+                    </li>
+                    <li>
+                        <a href="#">창업안내</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="side_img">
+                <img src="img/heder_hamburger.png" alt="메뉴 열기">
+            </div>
+        </div>
+        <div class="side_bar">
+            <div class="side_bar_close">
+                <img src="img/header_menu_close.png" alt="메뉴 닫기">
+            </div>
+            <div class="side_bar_gnb">
+                <ul>
+                    <li>
+                        <a href="#">새소식</a>
+                    </li>
+                    <li>
+                        <a href="#">메뉴</a>
+                    </li>
+                    <li>
+                        <a href="#">Brand</a>
+                    </li>
+                    <li>
+                        <a href="#">매장</a>
+                    </li>
+                    <li>
+                        <a href="#">창업안내</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+
+    <div class="container">
+        <div class="wrap">
+            <section class="main_banner">
+                <div class="swiper main_swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img class="p_img" src="img/swiper_img.png" alt="깨끗한과일, 직접 만든 빵으로 만듭니다.">
+                            <img class="m_img" src="img/swiper_m_img.png" alt="깨끗한과일, 직접 만든 빵으로 만듭니다.">
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="p_img" src="img/swiper_img.png" alt="깨끗한과일, 직접 만든 빵으로 만듭니다.">
+                            <img class="m_img" src="img/swiper_m_img.png" alt="깨끗한과일, 직접 만든 빵으로 만듭니다.">
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="p_img" src="img/swiper_img.png" alt="깨끗한과일, 직접 만든 빵으로 만듭니다.">
+                            <img class="m_img" src="img/swiper_m_img.png" alt="깨끗한과일, 직접 만든 빵으로 만듭니다.">
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="p_img" src="img/swiper_img.png" alt="깨끗한과일, 직접 만든 빵으로 만듭니다.">
+                            <img class="m_img" src="img/swiper_m_img.png" alt="깨끗한과일, 직접 만든 빵으로 만듭니다.">
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+
+
+                <script>
+                    var process = new Swiper(".main_swiper", {
+                        pagination: {
+                            el: ".swiper-pagination",
+                            type: "progressbar",
+                        },
+                        loop: true,
+                    });
+
+                </script>
+            </section>
+
+            <section class="menu">
+                <h1>메뉴 보기</h1>
+                <ul>
+                    <li>
+                        <div class="img">
+                            <img src="img/menu_1.png" alt="햄 에그 햄버거">
+                        </div>
+                        <div class="text">
+                            <h2>햄 에그 햄버거</h2>
+                            <p>메뉴 상세 설명 text</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="img">
+                            <img src="img/menu_2.png" alt="김치 볶음밥">
+                        </div>
+                        <div class="text">
+                            <h2>김치 볶음밥</h2>
+                            <p>메뉴 상세 설명 text</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="img">
+                            <img src="img/menu_3.png" alt="모닝 간편 샌드위치">
+                        </div>
+                        <div class="text">
+                            <h2>모닝 간편 샌드위치</h2>
+                            <p>메뉴 상세 설명 text</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="img">
+                            <img src="img/menu_4.png" alt="소시지 그릴드 스클램블">
+                        </div>
+                        <div class="text">
+                            <h2>소시지 그릴드 스클램블</h2>
+                            <p>메뉴 상세 설명 text</p>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="banner">
+                <div class="banner_img">
+                    <img src="img/sub_banner.png" alt="브런치 카페">
+                </div>
+                <div class="banner_text">
+                    <h2>Brunch Cafe</h2>
+                    <p>당신의 식사를 책임지겠습니다.</p>
+                </div>
+            </section>
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="footer">
+            <div class="privacy">
+                <div class="img">
+                    <img src="img/Brunch_logo_footer.png" alt="브런치">
+                </div>
+                <div class="privacy_box">
+                    <ul>
+                        <li>
+                            <a href="#">이용약관</a>
+                        </li>
+                        <li>
+                            <a href="#">개인정보처리방침</a>
+                        </li>
+                        <li>
+                            <a href="#">위치서비스 이용약관</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="privacy_box">
+                    <ul>
+                        <li>
+                            <a href="#">협력업체 문의</a>
+                        </li>
+                        <li>
+                            <a href="#">제휴·마케팅 문의</a>
+                        </li>
+                        <li>
+                            <a href="#">브랜드 소개</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="seach">
+                <div class="seach_box">
+                    <input type="text">
+                    <img src="img/seach_img.png" alt="검색">
+                </div>
+            </div>
+        </div>
+        <div class="i_con">
+            <img src="img/kako_footer.png" alt="카카오톡">
+            <img src="img/instar_footer.png" alt="인스타">
+        </div>
+    </footer>
+
+
+    <script src="/main.js"></script>
+
+
+</body>
+
+</html>

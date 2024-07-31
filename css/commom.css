@@ -1,0 +1,175 @@
+body{
+    overflow-x: hidden;
+}
+
+/* 헤더 */
+
+.header{
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #3B2817;
+    padding: 0 60px;
+}
+
+.header .gnb_list ul {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+}
+
+.header .gnb_list ul li a{
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+}
+
+
+.header .side_img{
+    display: none;
+    cursor: pointer;
+}
+
+/* 헤더 사이드바 */
+
+.side_bar{
+    position: absolute;
+    top:0;
+    right: -70%; /* 변경 */
+    width: 60%;
+    height: 150vh;
+    background-color: #FBBE76;
+    position: fixed;
+    transition: 0.3s;
+    padding: 15px;
+    z-index: 100;
+}
+
+.side_bar.active{
+    right: 0;
+}
+
+.side_bar .side_bar_close{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.side_bar .side_bar_gnb{
+    padding: 30px;
+}
+
+.side_bar .side_bar_gnb ul li{
+    padding: 15px 0;
+}
+
+.side_bar .side_bar_gnb ul li a{
+    font-size: 24px;
+    font-weight: 900;
+    color: #3B2817;
+}
+
+
+
+@media (max-width:1024px) {
+    .header .gnb_list ul {
+        display: none;
+    }
+    .header .side_img{
+        display: block;
+    }
+}
+@media (max-width:640px){
+    .header{
+        height: 50px;
+        padding: 0 10px;
+    }
+    .header img{
+        width: 70%;
+    }
+}
+
+
+
+/* 푸터 */
+
+footer{
+    margin-top: 5%;
+    background-color: #F3E0CF;
+    padding: 20px 30px;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 60px;
+}
+
+.footer .privacy{
+    display: flex;
+    align-items: center;
+    gap: 150px;
+    margin-top: 30px;
+}
+
+.footer .privacy a{
+    color: #3B2817;
+    font-weight: 600;
+    margin: 15px 0;
+}
+
+.footer .seach{
+    margin-top: 25px;
+}
+
+.footer .seach .seach_box{
+    position: relative;
+}
+
+.footer .seach .seach_box input{
+    border: 2px solid #3B2817;
+    padding: 12px 60px;
+    background-color: transparent;
+}
+
+.footer .seach .seach_box img{
+    position: absolute;
+    right: 2px;
+    top:3px;
+}
+
+.i_con{
+    text-align: right;
+    margin-right: 60px;
+}
+
+.i_con img{
+    margin-left: 30px;
+}
+
+
+@media (max-width:1024px) {
+    .footer .privacy{
+        align-items:start;
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+@media (max-width:640px){
+    .footer{
+        flex-direction: column;
+    }
+    .footer .seach .seach_box input{
+        padding: 12px 70px;
+    }
+    .i_con{
+        margin: 20px 0 10px 30px;
+        text-align: left;
+    }
+    .footer .privacy a{
+        font-size: 14px;
+    }
+}
